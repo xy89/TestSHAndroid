@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/relative_padding"
+    tools:context="${relativePackage}.${activityClass}" > 
+
+    <TextView
+        android:id="@+id/login_instruction"
+        android:layout_width="@dimen/login_edittext_length"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/hello_world" />
+    
+    <EditText 
+        style="@style/editTextStyle"
+        android:id="@+id/login_account"
+        android:minHeight="@dimen/min_height"
+        android:layout_width="@dimen/login_edittext_length"
+        android:layout_height="wrap_content"      
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_instruction"
+        android:hint="@string/login_account_hint"
+        android:drawableStart="@drawable/ic_action_user"
+        android:layout_marginTop="@dimen/layout_margin"/>
+    
+    <EditText
+        style="@style/editTextStyle"
+        android:id="@+id/login_password"
+        android:layout_width="@dimen/login_edittext_length"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_account"
+        android:hint="@string/login_password_hint"
+        android:drawableStart="@drawable/ic_action_lock_closed"
+        android:inputType="textPassword"
+        android:layout_marginTop="@dimen/layout_margin"/>
+    
+    <Button
+        android:id="@+id/login" 
+        android:layout_width="@dimen/login_edittext_length"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/min_height"
+        android:background="@drawable/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/login_password"
+        android:text="@string/login"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:enabled="false"/>
+    
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginTop="@dimen/layout_margin"/>      
+
+    
+    <TextView 
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/layout_margin"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:text="@string/register"/>
+    
+    <TextView
+        android:id="@+id/forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/layout_margin"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:text="@string/forget"/>
+        
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestServer</string>
+    <string name="hello_world">Login in with test passport</string>
+    <string name="login_account_hint">Phone</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forget">Forget password</string>
+    
+  
+
+</resources>
